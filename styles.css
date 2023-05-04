@@ -1,0 +1,61 @@
+html,
+body {
+  min-width: 300px;
+}
+#navbar {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  border-right: solid;
+  border-color: black;
+  z-index: 3;
+}
+#navbar ul {
+  height: 80%;
+  padding: 0;
+}
+#navbar li {
+  color: darkgray;
+  border-top: 1px solid;
+  border-color: black;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+#navbar a {
+  color: grey;
+  display: block;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+header {
+  font-weight: bold;
+  color: black;
+  font-size: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
+}
+#main-doc {
+  position: absolute;
+  margin-left: 300px;
+}
+@media (max-width: 768px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    border: none;
+    height: auto;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 20px;
+    left: 0;
+    top: 300px;
+  }
+}
